@@ -1,4 +1,3 @@
-import fresh_tomatoes, movie
 
 '''
 Movie metadata was generated using TMDB API (please see https://developers.themoviedb.org/3/getting-started). 
@@ -20,6 +19,8 @@ list_of_movies = [movie.Movie(movie_info, tmdb.Movies(i['id']).videos()['results
 for i in list_of_movies_with_videos:
     list_of_movies.append({'title':i.title, 'poster':i.poster, 'trailer' : i.trailer})
 '''
+
+import fresh_tomatoes, movie
 
 #this is a list of movie metadata of current movies in theaters stored within a dictionary data structure
 list_of_movies = [
