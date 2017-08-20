@@ -1,5 +1,6 @@
 import fresh_tomatoes, movie
 
+#this is a list of movie metadata of current movies in theaters stored within a dictionary data structure
 list_of_movies = [
   {
     'poster': u'https://image.tmdb.org/t/p/w500/c24sv2weTHPsmDa7jEMN0m2P3RT.jpg',
@@ -15,11 +16,6 @@ list_of_movies = [
     'poster': u'https://image.tmdb.org/t/p/w500/tb86j8jVCVsdZnzf8I6cIi65IeM.jpg',
     'trailer': u'KisPhy7T__Q',
     'title': u'Annabelle: Creation'
-  },
-  {
-    'poster': u'https://image.tmdb.org/t/p/w500/y52mjaCLoJJzxfcDDlksKDngiDx.jpg',
-    'trailer': u'yDBFrQvfGlQ',
-    'title': u'War for the Planet of the Apes'
   },
   {
     'poster': u'https://image.tmdb.org/t/p/w500/bOXBV303Fgkzn2K4FeKDc0O31q4.jpg',
@@ -49,7 +45,7 @@ list_of_movies = [
   {
     'poster': u'https://image.tmdb.org/t/p/w500/qyXPqzlCWf3T9VEpBtquUQZwsgi.jpg',
     'trailer': u'864zcREOnzg',
-    'title': u'King Arthur: Legend of the Sword'
+    'title': u'King Arthur'
   },
   {
     'poster': u'https://image.tmdb.org/t/p/w500/8dTWj3c74RDhXfSUZpuyVNJrgS.jpg',
@@ -59,12 +55,7 @@ list_of_movies = [
   {
     'poster': u'https://image.tmdb.org/t/p/w500/dzqEq8Jbvb5SYGoYPqLyIRrt6Cm.jpg',
     'trailer': u'8R0yLRoevnA',
-    'title': u'Starship Troopers: Traitor of Mars'
-  },
-  {
-    'poster': u'https://image.tmdb.org/t/p/w500/rJF6Y3XCPCbLih33K1tTDymR5Iy.jpg',
-    'trailer': u'hOiWSWLt-NA',
-    'title': u'What Happened to Monday'
+    'title': u'Starship Troopers'
   },
   {
     'poster': u'https://image.tmdb.org/t/p/w500/mux8YnLQK3pTA3sRDG7kDRlCVf3.jpg',
@@ -84,7 +75,7 @@ list_of_movies = [
   {
     'poster': u'https://image.tmdb.org/t/p/w500/8L7FE3bXjN98BcmKANzrL9WwKsK.jpg',
     'trailer': u'y0n1cdoaiZE',
-    'title': u'Valerian and the City of a Thousand Planets'
+    'title': u'Valerian'
   },
   {
     'poster': u'https://image.tmdb.org/t/p/w500/11MVxyp77zUPwc4cmqsUumNQYWK.jpg',
@@ -103,6 +94,8 @@ list_of_movies = [
   }
 ]
 
+#using list comprehension to create a list of movie instances prepopulated with the data from the list above
 movies = [movie.Movie(movie_info) for movie_info in list_of_movies]
 
+#creates a webpage with the
 fresh_tomatoes.open_movies_page(movies)
