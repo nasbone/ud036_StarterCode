@@ -1,4 +1,3 @@
-
 '''
 Movie metadata was generated using TMDB API (please see https://developers.themoviedb.org/3/getting-started). 
 Program to pull the data was implemented using a python wrapper module for the TMDB API called tmdbsimple 
@@ -23,7 +22,7 @@ for i in list_of_movies_with_videos:
 
 import fresh_tomatoes, movie
 
-#this is a list of movie metadata of current movies in theaters stored within a dictionary data structure
+#a list of movie metadata of current movies in theaters stored within a dictionary data structure
 list_of_movies = [
   {
     'poster': u'https://image.tmdb.org/t/p/w500/c24sv2weTHPsmDa7jEMN0m2P3RT.jpg',

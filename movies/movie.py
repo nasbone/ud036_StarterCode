@@ -3,7 +3,7 @@ import webbrowser
 class Movie():
     
     """
-    Store abstract movie attributes
+    creates Movie objects and stores abstract movie object attributes
     """
     def __init__(self, movie):
         
