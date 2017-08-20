@@ -5,7 +5,6 @@ Movie metadata was generated using TMDB API (please see https://developers.themo
 Program to pull the data was implemented using a python wrapper module for the TMDB API called tmdbsimple 
 (please see https://github.com/celiao/tmdbsimple).
 
-
 Below is a snippet of the python code used to generate the metadata below:
 
 import tmdbsimple as tmdb
@@ -20,7 +19,6 @@ list_of_movies = [movie.Movie(movie_info, tmdb.Movies(i['id']).videos()['results
 #creates a dictionary list of movie metadata
 for i in list_of_movies_with_videos:
     list_of_movies.append({'title':i.title, 'poster':i.poster, 'trailer' : i.trailer})
-
 '''
 
 #this is a list of movie metadata of current movies in theaters stored within a dictionary data structure
@@ -122,3 +120,4 @@ movies = [movie.Movie(movie_info) for movie_info in list_of_movies]
 
 #creates and renders a webpage filled with the movies from the list provided above.
 fresh_tomatoes.open_movies_page(movies)
+
