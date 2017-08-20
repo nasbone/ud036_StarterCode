@@ -3,7 +3,7 @@ Movie metadata was generated using TMDB API (please see https://developers.themo
 Program to pull the data was implemented using a python wrapper module for the TMDB API called tmdbsimple 
 (please see https://github.com/celiao/tmdbsimple).
 
-Below is a snippet of the python code used to generate the metadata below:
+Below is a snippet of the python code used to generate the metadata:
 
 import tmdbsimple as tmdb
 
