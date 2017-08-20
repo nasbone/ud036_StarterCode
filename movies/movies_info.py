@@ -94,8 +94,8 @@ list_of_movies = [
   }
 ]
 
-#using list comprehension to create a list of movie instances prepopulated with the data from the list above
+#using list comprehension to create a list of movie instances prepopulated with the data from the list of dictionaries above
 movies = [movie.Movie(movie_info) for movie_info in list_of_movies]
 
-#creates a webpage with the
+#creates and renders a webpage filled with the movies from the list provided above.
 fresh_tomatoes.open_movies_page(movies)
