@@ -1,5 +1,6 @@
 '''
-Movie metadata was generated using TMDB API (please see https://developers.themoviedb.org/3/getting-started). 
+Movie metadata was generated using TMDB API 
+(please see https://developers.themoviedb.org/3/getting-started). 
 Program to pull the data was implemented using a python wrapper module for the TMDB API called tmdbsimple 
 (please see https://github.com/celiao/tmdbsimple).
 
