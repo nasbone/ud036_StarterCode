@@ -13,7 +13,7 @@ movies = tmdb.Movies()
 now_playing_movies = movies.now_playing()
 
 #creates a list of movie instances prepopulated with movie metadata using list comprehension. 
-#Had to create another constructor in the Movie Class that accepts two dictionary objects for this to work properly i.e 
+#Had to change the constructor in the Movie Class to accept two parameter objects for this to work properly i.e 
 #def __init__(self, movie, youtube_id):
 
 list_of_movies = [movie.Movie(movie_info, tmdb.Movies(i['id']).videos()['results'][0]['key']) 
