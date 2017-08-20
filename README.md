@@ -7,7 +7,7 @@ Version: 1.0
 
 Description:
 -----------
-A simple program that generates and opens a local webpage filled with thumbnails of movies now playing in the theater. Clicking on each thumbnail should play a youtube trailer of the that particular movie.
+A simple program that generates and opens a local webpage filled with thumbnails of movies now playing in the theater. Clicking on a thumbnail should play a youtube trailer of that particular movie.
 
 Usage:
 -----
