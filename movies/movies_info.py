@@ -13,7 +13,8 @@ movies = tmdb.Movies()
 now_playing_movies = movies.now_playing()
 
 #creates a list of movie instances prepopulated with movie metadata using list comprehension
-list_of_movies = [movie.Movie(movie_info, tmdb.Movies(i['id']).videos()['results'][0]['key']) for movie_info in now_playing_movies['results']]
+list_of_movies = [movie.Movie(movie_info, tmdb.Movies(i['id']).videos()['results'][0]['key']) 
+                                                for movie_info in now_playing_movies['results']]
 
 #creates a dictionary list of movie metadata
 for i in list_of_movies_with_videos:
