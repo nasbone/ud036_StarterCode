@@ -1,5 +1,28 @@
 import fresh_tomatoes, movie
 
+'''
+Movie metadata was generated using TMDB API (please see https://developers.themoviedb.org/3/getting-started). 
+Program to pull the data was implemented using a python wrapper module for the TMDB API called tmdbsimple 
+(please see https://github.com/celiao/tmdbsimple).
+
+
+Below is a snippet of the python code used to generate the metadata below:
+
+import tmdbsimple as tmdb
+
+tmdb.API_KEY = "put your API key here"
+movies = tmdb.Movies()
+now_playing_movies = movies.now_playing()
+
+#creates a list of movie instances prepopulated with movie metadata using list comprehension
+list_of_movies = [movie.Movie(movie_info, tmdb.Movies(i['id']).videos()['results'][0]['key']) for movie_info in now_playing_movies['results']]
+
+#creates a dictionary list of movie metadata
+for i in list_of_movies_with_videos:
+    list_of_movies.append({'title':i.title, 'poster':i.poster, 'trailer' : i.trailer})
+
+'''
+
 #this is a list of movie metadata of current movies in theaters stored within a dictionary data structure
 list_of_movies = [
   {
