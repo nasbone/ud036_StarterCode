@@ -3,12 +3,12 @@ import webbrowser
 class Movie():
     
     """
-    creates Movie objects and stores abstract movie object attributes
+    creates Movie objects and stores abstract movie object attributes.
     """
     def __init__(self, movie):
         
         """
-        instantiates a movie object with the properties below
+        instantiates a movie object with the properties below.
         """
         self.poster = movie['poster']
         self.title = movie['title']
@@ -17,6 +17,6 @@ class Movie():
     def show_trailer(self):
         
         """
-        a method to play a trailer of a movie via a web browser
+        a method to play a trailer of a movie via a web browser.
         """
         webbrowser.open(self.trailer)
