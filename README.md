@@ -11,7 +11,7 @@ A simple program that generates and opens a local webpage filled with thumbnails
 
 Usage:
 -----
-To run this program from the terminal, simply clone the repo from any directory of choice and follow the steps below:
+To run this program from the terminal, simply clone the repo to any directory of choice and follow the steps below:
 
 ```
 λ git clone https://github.com/nasbone/ud036_StarterCode.git
